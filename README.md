@@ -8,15 +8,17 @@
 
 1.用已经学到的知识为自己写一个属于自己的主页博客。
 
-2.用已经学到的知识**模仿**一个页面，可以任意选择模仿的网站。
+2.用已经学到的知识**模仿**一个页面，可以任意选择模仿的网站。e.g: [LOFTER](https://www.lofter.com/front/login)
 
 3.尝试自己写一个类似于招新小程序主页这样的信息展示类网页。
 
-![](https://i0.hdslb.com/bfs/album/b11f5632639e01a1259ad21ef83352662e8fdf6e.png)
+![招新小程序图片](https://i0.hdslb.com/bfs/album/b11f5632639e01a1259ad21ef83352662e8fdf6e.png)
+
+4.***如果感觉以上三个都不符合胃口~~（so easy）~~，可以自己制作一个自己喜欢的网页（超期待ing）***
 
 ## 二、作业的提交方式
 
-- 与二面的提交方式相同，先 fork 仓库再 clone，在仓库的文件夹里放入作业，push 最后发起 pull request.
+- 与二面的提交方式相同，先 ~~star~~ 、fork 仓库再 clone，在仓库的文件夹里放入作业，push 最后发起 pull request.
 
 ## 三、作业截止时间
 
