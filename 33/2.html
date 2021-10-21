@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王弘毅</title>
+    <style>
+        html,body{width: 100%;
+        height: 100%;
+    background-image: url(header.jpeg);}
+        header{background-color: rgba(255,255, 255, 0.5);
+        color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;}
+    nav{float: left;
+    text-align: center;
+    background-color: pink;
+padding: 10px;
+height: 300px;
+width: 300px;}
+        body,html{height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;}
+    .a{width: 205px;}
+    .b{width: 200px;height: 50px;background-color: rgba(155, 155, 255, 0.7);text-align: center;
+    line-height: 50px;color: #000;border-radius: 10px;float: none;}
+    .c{width: 200px;height: 300px;display: none;}
+    ul{list-style: none;margin-left: -40px;}
+    ul li{line-height: 50px;display: block;width: 200px; text-align: center;}
+    .a:hover{cursor: pointer;}
+    .a:hover .c{display: block;}
+    .a:hover .b{background-color: azure;}
+    li:hover{background-color: gray;color: #000;} 
+    div{float: left;
+    margin: auto;}   
+    search{height: 50px;
+    float: right;
+    width: 400px;
+    display: flex;
+    flex-flow:row wrap;}
+    nav{float: left;
+        background-color:rgba(red, green, blue, alpha)}
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+         <div class="a">
+            <div class="b">阵营</div>
+            <div class="c">
+                <ul><li>铁血</li>
+                <li>皇家</li>
+                <li>白鹰</li>
+                <li></li></ul>
+            </div>
+         </div>
+        </div>
+        <div>
+            <div class="a">
+               <div class="b">某些历史梗</div>
+               <div class="c">
+                   <ul><li>胡德</li>
+                   <li>北宅</li>
+                   <li>幸运E</li>
+                   <li></li></ul>
+               </div>
+            </div>
+        </div>
+        <search>
+            <div>
+            <button type="button">Go!</button>
+            <input type="text" value="这是搜索框" width="100" height=50px>
+            </div>
+        </search>
+    </header>
+</body>
+</html>
