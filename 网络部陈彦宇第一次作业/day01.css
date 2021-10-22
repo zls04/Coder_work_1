@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfe1;
+}
+
+/*个人信息栏*/
+.header {
+  width: 100%;
+  height: 50px;
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.header_button {
+  width: 80px;
+  height: 23px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 23px;
+  color: #ffffff;
+  background-color: rgb(97, 97, 97);
+  margin: 0 5px;
+}
+
+.person {
+  width: 700px;
+  height: 170px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px #828D95;
+}
+
+.person_box {
+  width: 640px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person_info {
+  width: 435px;
+  height: 80px;
+  display: flex;
+}
+
+.person_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-image: url("./img/cyy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.person_text {
+  margin-left: 10px;
+}
+
+.person_text h1 {
+  color: #4c4c4c;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.person_text p {
+  color: #9d9d9d;
+  font-size: 12px;
+}
+
+.person_input {
+  width: 200px;
+  height: 30px;
+}
+
+.person_input input {
+  display: inline-block;
+  width: 190px;
+  height: 28px;
+  padding: 10px;
+  border-radius: 14px;
+  background-color: #f7f7f7;
+  align-items: center;
+  border:rgb(224, 224, 224) solid 2px;
+}
+
+.person_tag {
+  width: 100%;
+  height: 30px;
+  padding-left: 80px;
+
+}
+
+.person_tags {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #828D95;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fefefe;
+}
+
+/*内容*/
+.content {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px #828D95;
+}
+
+.content_box {
+  width: 100%;
+  display: flex;
+}
+
+.content_index {
+  width: 20%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.index_box {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  color: rgb(200,200,200);
+  border-radius: 40px;
+  border: 5px solid rgb(200,200,200);
+}
+
+.content_1_content {
+  width: 80%;
+}
+
+.content_1_content p{
+  margin: 15px 0;
+  font-size: 14px;
+  color: #737373;
+}
+
+.tag {
+  height: 30px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+}
+
+.tags {
+  height: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 0 8px;
+  margin-right: 12px;
+  color: #fefefe;
+  text-decoration: none;
+  text-align: center;
+  background-color: #828D95;
+}
+
+.link {
+  height: 17px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.link_content {
+  text-decoration: none;
+  font-size: 12px;
+  color: #838D95;
+}
+
+.line {
+  margin: 50px 0;
+  width: 100%;
+  height: 5px;
+  border-bottom: 2px dotted #9d9d9d;
+}
+
+.footer {
+  height: 45px;
+  width: 100%;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
