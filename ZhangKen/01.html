@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loft登录页面</title>
+    <script type="text/javascript">
+        function clickb(){
+        document.getElementById("b").style.display="flex";
+        document.getElementById("a").style.display="none";
+        }
+        function clicka(){
+        document.getElementById("a").style.display="flex";
+        document.getElementById("b").style.display="none";  
+        }
+    </script>
+<style>
+    *{
+        font-size: 16px;
+        font-style: italic;
+
+    }
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#father {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(tata.gif);
+    background-size: cover;
+}
+#a {
+    border-radius: 15px;
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px black;
+}
+#b {
+    border-radius: 15px;
+    
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px black;
+}
+input {
+    width: 300px;
+    height: 56px;
+}
+#a1 {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.left {
+    
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+.right {
+    
+    text-align: center;
+    width: 50%;
+    height: 100%;    
+}
+.height {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0%;
+}
+a {
+    text-decoration: none;
+    font-style: oblique;
+    color: #c04851;
+}
+</style>
+</head>
+<body>
+<div id="father">
+    <div id="a">
+            <div class="height"><a class="left" onclick="clicka()" href="#">账号登录</a>  <a class="right" onclick="clickb()" href="#">手机号登陆</a></div>
+            <div>
+                <input type="text"  placeholder="账号名" autofocus required>
+            </div>
+            <div>
+                
+                <input type="password" placeholder="密码" required>
+            </div>
+            <div><input type="button" value="登录" ></div>
+            
+<div id="a1">
+<button id="b1" onclick="first()">
+背景1
+</button>
+<button id="b2" onclick="second()">
+    背景2
+    </button>
+    <button id="b3" onclick="third()">
+        背景3
+        </button>
+        <button id="b4" onclick="fourth()">
+            背景4
+            </button>
+</div>
+</div>
+<div id="b" style="display: none;">
+    <div class="height"><a class="left" href="#" onclick="clicka()">账号登录</a>  <a class="right" href="#" onclick="clickb()">手机号登陆</a></div>
+    <div>
+        <input type="text"  placeholder="手机号" autofocus required>
+    </div>
+    <div>
+        
+        <input type="password" placeholder="验证码" required>
+    </div>
+    <div><input type="button" value="登录" ></div>
+    
+<div id="a1">
+<button id="b1" onclick="first()">
+背景1
+</button>
+<button id="b2" onclick="second()">
+背景2
+</button>
+<button id="b3" onclick="third()">
+背景3
+</button>
+<button id="b4" onclick="fourth()">
+    背景4
+    </button>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+<script>
+function first(){
+    document.getElementById("father").style.backgroundImage="url('2.jpg')"
+
+}
+function second(){
+    document.getElementById("father").style.backgroundImage="url('3.jpg')"
+
+}
+function third(){
+    document.getElementById("father").style.backgroundImage="url('4.jpg')"
+
+}
+function fourth(){
+    document.getElementById("father").style.backgroundImage="url('1.jpg')"
+
+}
+</script>
+</html>
