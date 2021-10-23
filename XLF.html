@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #e0e0e0;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .div1
+        {
+            background-color:#ff98cc ;
+            height: 110px;
+            font-size: 25px;
+            display: flex;
+            flex-direction:column;
+            justify-content:space-between;
+            visibility: visible;
+        }
+        .div2
+        {
+            width: 80px;
+            margin: 0;
+            padding: 0;
+            border-radius: 40px;
+            text-align: center;
+            font-size: 15px;
+            height: 40px; 
+            line-height: 40px;
+            border: none;
+        }
+        .div3
+        {
+            padding: 0;
+            margin: 0;
+            border: 1px solid transparent;
+            height:70px;
+            width: 45px;
+            text-align: center;
+        }
+        .div4
+        {
+            padding: 0;
+            margin: 0;
+            border: 1px solid transparent;
+            height: 43px;
+            width: 43px;
+            background: none;
+        }
+        .div5
+        {
+            padding: 0;
+            margin:0 auto;
+            border: 1px solid transparent;
+            height:24px;
+            width: 40px;t
+            text-align: center;
+            font-size: 10px;
+        }
+        #rectangle1
+        {
+            margin: 0 auto;
+            width: 40px;
+            height: 25px;
+            background-color: rgb(190, 188, 188);
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            text-align: center;
+        }
+        #rectangle2
+        {
+            width: 10px;
+            height: 12px;
+            background-color: #e0e0e0;
+            display: inline-block;
+            margin-top: 13px;
+        }
+        #rectangle3
+        {
+            margin: 0 auto;
+            width: 40px;
+            height: 16px;
+            background-color: rgb(190, 188, 188);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            text-align: center;
+        }
+        #title
+        {
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding-top: 10px;
+            visibility: visible;
+        }
+        #column
+        {
+            width: 330px;
+            height:40px;
+            background-color:#e5ceef;
+            margin: 0 auto;
+            border-radius: 50px;
+            justify-content:space-between;
+            flex-direction: row;
+            display: flex;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #blank
+        {
+            background-color: #f9f3f3;
+            height:670px;
+        }
+        #foot
+        {
+            background-color:#e0e0e0;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+        }
+        #brick
+        {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            height:70px;
+            width: 200px;
+        }
+        #triangle
+    {
+        width: 0;
+        height: 0;
+        border-bottom:18px solid rgb(190, 188, 188);
+        border-left:20px solid transparent;
+        border-right: 20px solid transparent;
+        margin: 0 auto;
+    }
+    #circle
+    {
+        width:20px;
+        height:20px;
+        border-radius: 10px;
+        background-color: rgb(190, 188, 188);
+        display: inline-block;
+    }
+    #tz
+    {
+        background-color: #e5ceef;
+    }
+    #fx
+    {
+        background-color: white;
+    }
+    #ss
+    {
+        background-color: #e5ceef;
+    }
+    #tzcontent
+    {
+        visibility: hidden;
+        float: left;
+    }
+    #fxcontent
+    {
+        position: absolute;
+    }
+    #sscontent
+    {
+        background-color: #d4d3d3;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        visibility: hidden;
+        border: none;
+        margin: 0 auto;
+        display: block;
+    }
+    </style>
+</head>
+<body leftmargin="0" topmargin="0">
+    <div class="div1">
+        <h2 id="title">
+            2022学生组织招新
+        </h2>
+        <div id="column">
+            <button class="div2" id="tz" onclick="tz()">
+                通知
+            </button>
+            <button class="div2" id="fx" onclick="fx()">
+                发现
+            </button>
+            <button class="div2" id="ss" onclick="ss()">
+                搜索
+            </button>
+        </div>
+    </div>
+    <div id="blank">
+        <div id="tzcontent">
+            <br>
+            <h2>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp通知
+            </h2>
+            <br>
+            <p>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp以下是通知信息
+            </p>
+        </div>
+        <div id="fxcontent">
+            <h2>
+                &nbsp&nbsp&nbsp&nbsp没有任何发现呢[doge]
+            </h2>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button id="sscontent" onclick="w()">
+            请输入搜索关键词
+        </button>
+    </div> 
+    <div id="foot">
+        <div class="div3" >
+            <button class="div4" onclick="w()">
+                <div id="triangle">
+                </div>
+                <div id="rectangle1">
+                    <div id="rectangle2">
+                    </div>
+                </div>
+            </button>
+            <div class="div5">
+                主页
+            </div>
+        </div>
+        <div id="brick">
+        </div>
+        <div class="div3">
+            <button class="div4" onclick="w()">
+                <div id="circle">
+                </div>
+                <div id="rectangle3">
+                </div>
+                <div class="div5">
+                    我
+                </div>
+            </button>
+        </div>
+    </div>
+<script>
+    function w()
+    {
+        alert("该功能尚未开发");
+    }
+    function tz()
+    {
+        document.getElementById("tz").style.backgroundColor="white";
+        document.getElementById("fx").style.backgroundColor="#e5ceef";
+        document.getElementById("ss").style.backgroundColor="#e5ceef";
+        document.getElementById("tzcontent").style.visibility="visible";
+        document.getElementById("fxcontent").style.visibility="hidden";
+        document.getElementById("sscontent").style.visibility="hidden";
+    }
+    function fx()
+    {
+        document.getElementById("fx").style.backgroundColor="white";
+        document.getElementById("tz").style.backgroundColor="#e5ceef";
+        document.getElementById("ss").style.backgroundColor="#e5ceef";
+        document.getElementById("fxcontent").style.visibility="visible";
+        document.getElementById("tzcontent").style.visibility="hidden";
+        document.getElementById("sscontent").style.visibility="hidden";
+    }
+    function ss()
+    {
+        document.getElementById("ss").style.backgroundColor="white";
+        document.getElementById("fx").style.backgroundColor="#e5ceef";
+        document.getElementById("tz").style.backgroundColor="#e5ceef";
+        document.getElementById("sscontent").style.visibility="visible";
+        document.getElementById("fxcontent").style.visibility="hidden";
+        document.getElementById("tzcontent").style.visibility="hidden";
+    }
+</script>
+</body>
+</html>
