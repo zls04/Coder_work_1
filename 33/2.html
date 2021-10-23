@@ -28,22 +28,33 @@ width: 300px;}
     .a{width: 205px;}
     .b{width: 200px;height: 50px;background-color: rgba(155, 155, 255, 0.7);text-align: center;
     line-height: 50px;color: #000;border-radius: 10px;float: none;}
-    .c{width: 200px;height: 300px;display: none;}
+    .c{width: 200px;height: 300px;display: none;z-index: 2;}
     ul{list-style: none;margin-left: -40px;}
-    ul li{line-height: 50px;display: block;width: 200px; text-align: center;}
+    ul li{line-height: 50px;display: block;width: 200px; text-align: center;background-color: rgba(225, 225, 225, 0.4);color: black;z-index: 2;}
     .a:hover{cursor: pointer;}
     .a:hover .c{display: block;}
     .a:hover .b{background-color: azure;}
-    li:hover{background-color: gray;color: #000;} 
+    li:hover{background-color: gray;color: #000;z-index: 2;} 
     div{float: left;
-    margin: auto;}   
+    margin: auto;
+    width: 25%;}   
     search{height: 50px;
     float: right;
-    width: 400px;
+    width: 450px;
     display: flex;
     flex-flow:row wrap;}
-    nav{float: left;
-        background-color:rgba(red, green, blue, alpha)}
+    article{}
+    div1{z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(225, 225, 225, 0.7) ;
+    border-radius: 10px;
+    z-index: 1;}
+    summary{font-size: 25px;
+    height: 30px;
+    float: none;
+    width: 100%;
+    text-align: left;}
     </style>
 </head>
 <body>
@@ -63,10 +74,11 @@ width: 300px;}
             <div class="a">
                <div class="b">某些历史梗</div>
                <div class="c">
-                   <ul><li>胡德</li>
-                   <li>北宅</li>
-                   <li>幸运E</li>
-                   <li></li></ul>
+                   <ul>
+                        <li><a href=作业.html>胡德</a></li>
+                        <li>北宅</li>
+                        <li>幸运E</li>
+                    </ul>
                </div>
             </div>
         </div>
@@ -76,6 +88,23 @@ width: 300px;}
             <input type="text" value="这是搜索框" width="100" height=50px>
             </div>
         </search>
-    </header>
+    </header><br>
+   
+  <div1>
+        <summary>碧蓝航线</summary>
+        <article>
+            <p>这是一个表面被71%的海水覆盖着的蓝色星球， 人类在这片碧蓝色之中出生、成长、孕育和发展属于自己的文明。<br>
+
+                然而，伴随着它们的，还有不断膨胀的野心和欲望。 表面风平浪静的世界格局之下，历史的暗流涌动。<br>
+                
+                终于，未知的敌人在海洋中出现，面对敌方压倒性的战力，各个阵营却仍然各自为战， 最终换来的结果亦是惨痛的：人类失去了90%以上的海域控制权，科技和生活水平急速倒退。 人类对于海洋以及未知的敌人产生了深深的阴影， 并且将那些将他们拖入深海黑暗之中的怪物们称之为“塞壬”。
+                
+                数十年之后，各大阵营为了夺回曾经的辉煌，终于摒弃前嫌，联合创建了第三方军事组织“碧蓝航线”， “碧蓝航线”的宗旨在于：集结并共享来自世界各大阵营的科技与资源， 建造出能够与“塞壬”抗衡的新锐舰队，夺回海域的控制权。<br>
+                
+                本文引自<a href=https://zh.moegirl.org.cn>萌娘百科</a>
+            </p>
+            
+        </article>
+    </div1>
 </body>
 </html>
